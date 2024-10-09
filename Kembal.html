@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berhasil Mendaftar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #777B7E;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            background-color: #000000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+        }
+        .container {
+            padding: 20px;
+            flex: 1;
+            text-align: center;
+        }
+        .message {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .message h2 {
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .message p {
+            color: #666;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            line-height: 1.6;
+        }
+        .cta {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .cta button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        .cta button:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #4CAF50;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer a:hover {
+            color: #45a049;
+        }
+        .footer .social-icons {
+            margin-top: 10px;
+        }
+        .footer .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+            transition: transform 0.3s;
+        }
+        .footer .social-icons img:hover {
+            transform: scale(1.2);
+        }
+        /* Simple Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #ffffff;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #000000;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #777B7E;
+        }
+    </style>
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Berhasil Mendaftar</h1>
+    </div>
+    <div class="container">
+        <div class="message">
+            <h2>Terima Kasih!</h2>
+            <p>Anda telah berhasil mendaftar untuk kursus kami. Kami akan menghubungi Anda melalui email untuk informasi lebih lanjut.</p>
+        </div>
+        <div class="cta">
+            <button onclick="navigateTo('Landing_Page.html')">Kembali ke Beranda</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Ikuti kami di media sosial:</p>
+        <div class="social-icons">
+        <a href="https://www.facebook.com/share/8sUVX6eJDBaYSwfy/?mibextid=qi2Omg"><img src="https://cdn.pixabay.com/photo/2017/06/22/06/22/facebook-2429746_1280.png" alt="Facebook"></a>
+        <a href="https://www.tiktok.com/@_sabat.2_sola?is_from_webapp=1&sender_device=pc"><img src="https://cdn.pixabay.com/photo/2021/06/15/12/28/tiktok-6338429_960_720.png" alt="Tiktok"></a>
+        <a href="https://www.instagram.com/n_sabat.sn?igsh=cTIvb3MOazRjMzN5"><img src="https://cdn.pixabay.com/photo/2022/04/01/05/40/app-7104075_1280.png" alt="Instagram"></a>
+        </div>
+    </div>
+</body>
+</html>

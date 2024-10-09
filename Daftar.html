@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #777B7E;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            background-color: #000000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+        }
+        .container {
+            padding: 20px;
+            flex: 1;
+        }
+        .form-container {
+            background-color: 999DA0;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .form-container label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #ffffff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        .form-container input, .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1px 0;
+            position:static;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer a {
+            color: #4CAF50;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer a:hover {
+            color: #45a049;
+        }
+        .footer .social-icons {
+            margin-top: 10px;
+        }
+        .footer .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+            transition: transform 0.3s;
+        }
+        .footer .social-icons img:hover {
+            transform: scale(1.2);
+        }
+        /* Simple Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #ffffff;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #000000;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #777B7E;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Formulir Pendaftaran</h1>
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <h2>Daftar Sekarang</h2>
+            <form action="Kembal.html" method="post">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Nomor Telepon:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="course">Pilih Kursus:</label>
+                <select id="course" name="course" required>
+                    <option value="yoga">Yoga untuk Pemula</option>
+                    <option value="strength">Latihan Kekuatan</option>
+                    <option value="cardio">Cardio Intensif</option>
+                </select>
+                
+                <button type="submit">Daftar</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Ikuti kami di media sosial:</p>
+        <div class="social-icons">
+        <a href="https://www.facebook.com/share/8sUVX6eJDBaYSwfy/?mibextid=qi2Omg"><img src="https://cdn.pixabay.com/photo/2017/06/22/06/22/facebook-2429746_1280.png" alt="Facebook"></a>
+        <a href="https://www.tiktok.com/@_sabat.2_sola?is_from_webapp=1&sender_device=pc"><img src="https://cdn.pixabay.com/photo/2021/06/15/12/28/tiktok-6338429_960_720.png" alt="Tiktok"></a>
+        <a href="https://www.instagram.com/n_sabat.sn?igsh=cTIvb3MOazRjMzN5"><img src="https://cdn.pixabay.com/photo/2022/04/01/05/40/app-7104075_1280.png" alt="Instagram"></a>
+        </div>
+    </div>
+</body>
+</html>
